@@ -1,6 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Person {
+  firstName: string;
+  lastName: string;
 
+
+
+
+  sayHi(s: string): string;
+
+
+
+
+
+
+
+}
 
 
 @Component({
@@ -8,15 +23,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppzzzzzzComponent implements OnInit {
+export class AppComponent implements OnInit {
   title = 'app';
 
   ngOnInit() {
-    this.interfaceTest();
-
+    this.interfaceTest({firstName: 'Ray', lastName: 'Ayala', sayHi() });
   }
 
-  interfaceTest() {
+  interfaceTest(x: Person) {
+    console.log(`${x.firstName}  ${x.lastName}`);
+
 
   }
 }
