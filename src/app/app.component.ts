@@ -6,20 +6,6 @@ interface Person {
   sayHi(): string;
 }
 
-/** class Customer {
- * constructor() {}
- * sayHi(name): string {
- *  console.log('Hiii'+ name);
- *  return 'Hii' +name;
- * }
-
-}
-
- class Employee {
-
- }
-
-*/
 
 
 @Component({
